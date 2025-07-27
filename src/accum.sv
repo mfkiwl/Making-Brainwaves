@@ -1,9 +1,3 @@
-/***************************************************/
-/* ECE 327: Digital Hardware Systems - Spring 2025 */
-/* Lab 4                                           */
-/* Accumulator Module                              */
-/***************************************************/
-
 module accum # (
     parameter DATAW = 19,
     parameter ACCUMW = 32
@@ -18,7 +12,6 @@ module accum # (
     output ovalid
 );
 
-/******* Your code starts here *******/
 logic signed [ACCUMW-1:0] r_accum;
 logic r_ovalid;
 
@@ -36,7 +29,5 @@ end
     
 assign result = r_accum;
 assign ovalid = r_ovalid;
-
-/******* Your code ends here ********/
 
 endmodule
