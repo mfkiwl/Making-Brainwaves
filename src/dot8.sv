@@ -1,9 +1,3 @@
-/***************************************************/
-/* ECE 327: Digital Hardware Systems - Spring 2025 */
-/* Lab 4                                           */
-/* 8-Lane Dot Product Module                       */
-/***************************************************/
-
 module dot8 # (
     parameter IWIDTH = 8,
     parameter OWIDTH = 32
@@ -17,7 +11,6 @@ module dot8 # (
     output ovalid
 );
 
-/******* Your code starts here *******/
 // registers
 logic signed [IWIDTH-1:0] a0, a1, a2, a3, a4, a5, a6, a7, b0, b1, b2, b3, b4, b5, b6, b7;
 logic signed [2*IWIDTH-1:0] r_mul0, r_mul1, r_mul2, r_mul3, r_mul4, r_mul5, r_mul6, r_mul7;
@@ -89,8 +82,5 @@ end
 
 assign result = r2_add0;
 assign ovalid = r_valid4;
-
-
-/******* Your code ends here ********/
 
 endmodule
